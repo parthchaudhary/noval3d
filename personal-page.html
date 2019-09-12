@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NOVEL3D | Home</title>
+    <title>NOVEL3D | Personal Page</title>
     <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.min.css">
@@ -19,52 +19,72 @@
                 <div class="novel3d-logo">
                     <a href="index.html"><img src="./image/novel3d-logo.jpg" alt=""></a>
                 </div>
-                <ul class="nav header-links">
-                    <li><a href="#">Create</a></li>
-                    <li><a href="#">FAQS</a></li>
-                    <li><a href="#">LOGIN</a></li>
+
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#loggedIn"
+                        aria-controls="loggedIn" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="loggedIn" class="collapse navbar-collapse">
+                        <ul class="nav header-links logged-in">
+                            <li><a href="#">CREATE</a></li>
+                            <li><a href="#">MY PROJECTS</a></li>
+                            <li><a href="#">MY ORDERS</a></li>
+                            <li><a href="#">FAQS</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="user-nav header-links logged-in">
+                    <li>
+                        <a href="#"><i class="user-pic"><img src="./image/user-icon.png" alt=""></i>Hi, John</a>
+                    </li>
+                    <li>
+                        <a href="login.html" title="logout"><i class="log-out-icon"><img src="./image/logout-icon.png"
+                                    alt=""></i></a>
+                    </li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <!-- login - Register -->
+    <!-- personal page and delete me -->
     <section class="login-register">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-wrapper">
-                        <h4>New User? Register Here</h4>
+                        <h4>PERSONAL PAGE</h4>
 
                         <form action="index.html">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="First Name*">
-                                <input type="text" class="form-control" placeholder="Last Name*">
-                                <input type="text" class="form-control" placeholder="Company Name">
-                                <input type="email" class="form-control" placeholder="Email*">
-                                <input type="tel" class="form-control" placeholder="Phone">
-                                <input type="password" class="form-control" placeholder="Password*">
-                                <input type="password" class="form-control" placeholder="Confirm Password*">
+                                <label class="input-label">First Name: </label>
+                                <input type="text" class="form-control" placeholder="John">
+                                <label class="input-label">Last Name: </label>
+                                <input type="text" class="form-control" placeholder="Doe">
+                                <label class="input-label">Company Name: </label>
+                                <input type="text" class="form-control" placeholder="">
+                                <label class="input-label">Phone: </label>
+                                <input type="tel" class="form-control" placeholder="">
+                                <label class="input-label">Passowrd(if changing password) </label>
+                                <input type="password" class="form-control" placeholder="">
+                                <label class="input-label">Confirm Passowrd(if changing password)</label>
+                                <input type="password" class="form-control" placeholder="">
                                 <small class="form-text text-muted">
-                                    Privacy Policy*: We will use this data and enable cookies to give to you a better
-                                    application experience, plus we will use Google Tag Manager to measure application
-                                    performance. Your data won’t be shared with third parties.
+                                    Notify me when an order has been placed:
                                 </small>
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" id="customRadio1" name="customRadio"
                                                 class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio1">I give
-                                                consent</label>
+                                            <label class="custom-control-label" for="customRadio1">Yes, please</label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" id="customRadio2" name="customRadio"
                                                 class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio2">I don’t give
-                                                consent</label>
+                                            <label class="custom-control-label" for="customRadio2">No, Thanks</label>
                                         </div>
                                     </div>
                                 </div>
@@ -91,25 +111,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary">CREATE NEW ACCOUNT</button>
+                            <button type="submit" class="btn btn-primary">SAVE USER</button>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-wrapper">
-                        <h4>Registered Already? Login Here</h4>
+                        <h4>Delete my account</h4>
 
                         <form action="index.html">
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email*">
-                                <input type="password" class="form-control" placeholder="Password*">
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="Remember me">
-                                <label class="custom-control-label" for="Remember me">Remember me</label>
-                            </div>
-                            <button type="submit" class="btn btn-primary"> LOGIN </button>
-                            <a href="#" class="forgot-link btn btn-link">Forgot your password?</a>
+                            <small>
+                                This operation is permanent: all of your account information, shop bindings and orders
+                                will be deleted.
+                            </small>
+                            <small>
+                                You will need to manually delete this app from your shopify admin panel.
+                            </small>
+                            <br>
+                            <button type="submit" class="btn btn-primary"> DELETE ME </button>
                         </form>
                     </div>
                 </div>
