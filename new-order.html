@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NOVEL3D | Personal Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container-fluid">
+            <div class="header-wrapper">
+                <div class="novel3d-logo">
+                    <a href="index.html"><img src="./image/novel3d-logo.jpg" alt=""></a>
+                </div>
+
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#loggedIn"
+                        aria-controls="loggedIn" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="loggedIn" class="collapse navbar-collapse">
+                        <ul class="nav header-links logged-in">
+                            <li><a href="create.html">CREATE</a></li>
+                            <li class="active"><a href="#">MY PROJECTS</a></li>
+                            <li><a href="#">MY ORDERS</a></li>
+                            <li><a href="#">FAQS</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="user-nav header-links logged-in">
+                    <li>
+                        <a href="#"><i class="user-pic"><img src="./image/user-icon.png" alt=""></i>Hi, John</a>
+                    </li>
+                    <li>
+                        <a href="login.html" title="logout">
+                            <i class="log-out-icon"><img src="./image/logout-icon.png" alt=""></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- New Order and options -->
+    <section class="order-detail-options">
+        <!-- detila  bar -->
+        <div class="detail-search-bar">
+            <div class="container-fluid">
+                <div class="youre-project-text px-5">
+                    <h3>NEW ORDER</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order and more options -->
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <!-- new order information -->
+                    <div class="new-order-desc">
+                        <div class="new-order-item">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="new-order-img">
+                                        <img src="./image/zip_up_hoodie.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="new-order-name">
+                                        <p>Type: Hoodie</p>
+                                        <p>My awesome model</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-order-info-table">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <img src="./image/internet.png" alt="" class="img-fluid">
+                                            </th>
+                                            <th>
+                                                <img src="./image/scissors.png" alt="" class="img-fluid">
+                                            </th>
+                                            <th>
+                                                <img src="./image/delivery-truck.png" alt="" class="img-fluid">
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">America</td>
+                                            <td><span>$</span>23</td>
+                                            <td><span>$</span>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Europe</td>
+                                            <td><span>$</span>23</td>
+                                            <td><span>$</span>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">World</td>
+                                            <td><span>$</span>23</td>
+                                            <td><span>$</span>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- new-order-form -->
+                    <div class="new-order-form">
+                        <form action="confirm.html">
+                            <div class="buton-group">
+                                <button class="btn btn-primary">+ ADD ORDER</button>
+                                <button class="btn btn-primary">PROCEED TO PAYMENT</button>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-header">
+                                    <div class="order-number">
+                                        <h4>Order 1</h4>
+                                    </div>
+                                    <div class="order-option">
+                                        <button href="#" class="duplicate-order btn">
+                                            <img src="./image/duplicate.png" alt="">
+                                        </button>
+                                        <button href="#" class="delete-order btn">
+                                            <img src="./image/delete.png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="sizing-shipping-info">
+                                    <div class="row no-gutters">
+                                        <div class="col-sm-4">
+                                            <div class="sizes-quantity">
+                                                <h4>Select sizes and quantity</h4>
+                                                <div class="btn-group">
+                                                    <button class="btn">Select All</button>
+                                                    <button class="btn">Deselect All</button>
+                                                </div>
+                                                <ul class="list-unstyled sizes-quantity-input">
+                                                    <li>
+                                                        <label>S</label>
+                                                        <input type="text" class="form-control" value="0">
+                                                    </li>
+                                                    <li>
+                                                        <label>M</label>
+                                                        <input type="text" class="form-control" value="0">
+                                                    </li>
+                                                    <li>
+                                                        <label>L</label>
+                                                        <input type="text" class="form-control" value="0">
+                                                    </li>
+                                                    <li>
+                                                        <label>XL</label>
+                                                        <input type="text" class="form-control" value="0">
+                                                    </li>
+                                                    <li>
+                                                        <label>2XL</label>
+                                                        <input type="text" class="form-control" value="0">
+                                                    </li>
+                                                    <li>
+                                                        <label>3XL</label>
+                                                        <input type="text" class="form-control" value="0">
+                                                    </li>
+                                                    <li>
+                                                        <label>4XL</label>
+                                                        <input type="text" class="form-control" value="0">
+                                                    </li>
+                                                    <li>
+                                                        <label>5XL</label>
+                                                        <input type="text" class="form-control" value="0">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="shipping-info">
+                                                <h4>Shipping Informations</h4>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <label>Shipping Name*</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>Shipping City*</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>Shipping Email*</label>
+                                                        <input type="email" class="form-control">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>Shipping Zip Code*</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>Shipping Phone</label>
+                                                        <input type="number" class="form-control">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>Shipping Province*</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>Shipping Address 1*</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>Shipping Country*</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>Shipping Address 2</label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label>Shipping Notes</label>
+                                                        <textarea name="shipping-note" class="form-control">
+
+                                                        </textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

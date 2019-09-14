@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NOVEL3D | Personal Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container-fluid">
+            <div class="header-wrapper">
+                <div class="novel3d-logo">
+                    <a href="index.html"><img src="./image/novel3d-logo.jpg" alt=""></a>
+                </div>
+
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#loggedIn"
+                        aria-controls="loggedIn" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="loggedIn" class="collapse navbar-collapse">
+                        <ul class="nav header-links logged-in">
+                            <li><a href="create.html">CREATE</a></li>
+                            <li class="active"><a href="#">MY PROJECTS</a></li>
+                            <li><a href="#">MY ORDERS</a></li>
+                            <li><a href="#">FAQS</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="user-nav header-links logged-in">
+                    <li>
+                        <a href="#"><i class="user-pic"><img src="./image/user-icon.png" alt=""></i>Hi, John</a>
+                    </li>
+                    <li>
+                        <a href="login.html" title="logout">
+                            <i class="log-out-icon"><img src="./image/logout-icon.png" alt=""></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- order-details and option -->
+    <section class="order-detail-options">
+        <!-- detila and search bar -->
+        <div class="detail-search-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="youre-project-text">
+                            <h3>YOUR PROJECTS</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <form action="search.html" class="search-form">
+                            <input type="text" class="form-control" placeholder="Search Project">
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="order-count">
+                            <label>1</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- order/product details -->
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <div class="order-options">
+                        <ul class="option-list list-unstyled">
+                            <li class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="option-img">
+                                                <img src="./image/3d.png" alt="">
+                                            </div>
+                                            <div class="option-title">
+                                                <h5>Total projects</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="project-count">
+                                                <h2>1</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="option-img">
+                                                <img src="./image/clock-circular-outline.png" alt="">
+                                            </div>
+                                            <div class="option-title">
+                                                <h5>Pending projects</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="project-count">
+                                                <h2>1</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="option-img">
+                                                <img src="./image/delivery-truck.png" alt="">
+                                            </div>
+                                            <div class="option-title">
+                                                <h5>Production ready projects</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="project-count">
+                                                <h2>0</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="option-img">
+                                                <img src="./image/exclamation.png" alt="">
+                                            </div>
+                                            <div class="option-title">
+                                                <h5>Projects with errors</h5>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="project-count">
+                                                <h2>0</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="order-info table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th width="20%">Image</th>
+                                    <th width="20%">Title</th>
+                                    <th width="23%">Description</th>
+                                    <th width="10%">Status</th>
+                                    <th width="10%">Date Insert</th>
+                                    <th width="17%">Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="order-img">
+                                            <img src="./image/zip_up_hoodie.jpg" alt="">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>My awesome model</p>
+                                    </td>
+                                    <td>
+                                        <p class="order-desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat.
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            Pending
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            2019-09-12
+                                            <br>
+                                            01:59:32
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <div class="order-btn-group">
+                                            <button class="btn btn-primary">ORDER IT</button>
+                                            <button class="btn btn-primary">GET MOCKUP</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
